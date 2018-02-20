@@ -64,7 +64,7 @@ class Game:
 
         ##we need to count the times that it gets tails, tails, heads in a 20 flip sequence
     def Get_x(self):
-        print((self._wins*100)-250)
+        return (self._wins*100)-250
 
 class AllGames:
     def __init__(self, odds_heads, num_games):
@@ -82,3 +82,5 @@ class AllGames:
 
 MySimulation=AllGames(odds_heads=.4, num_games=1000)
 MySimulation.get_average_x()
+
+print(MySimulation.get_average_x())
